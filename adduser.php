@@ -8,7 +8,7 @@ if(isset($_POST["submit"])) {
     $status = $_POST["status"];
 
     // Include the connection file
-    include("connection.php");
+    include("connections.php");
 
     // Insert data into the user table
     $sql = "INSERT INTO user (username, password, email, role, status) VALUES ('$username', '$password', '$email', '$role', '$status')";
